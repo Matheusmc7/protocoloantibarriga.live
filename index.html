@@ -3,6 +3,21 @@
 <html lang="pt-br">
 <title>O Enigma do Emagrecimento</title>
 <head> 
+ <div class="aviso">
+	234 pessoas estão assistindo a esse vídeo. Devido à alta demanda de acessos, garantimos a apresentação somente até <span id="dataHoje">HOJE</span>
+</div>
+ <script>
+function dataHoje() {
+  var data = new Date();  
+  var dia = String(data.getDate()).padStart(2, '0');
+  var mes = String(data.getMonth() + 1).padStart(2, '0');
+  var ano = data.getFullYear();
+  dataAtual = dia + '/' + mes + '/' + ano;
+  document.getElementById('dataHoje').innerHTML = dataAtual;
+}
+</script>
+ 
+ 
  <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
